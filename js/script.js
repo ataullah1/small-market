@@ -30,12 +30,20 @@ for (const card of cards) {
         discountPrice.innerText = discount.toFixed(2);
         const totalP = priceCount - discount;
         total.innerText = totalP.toFixed(2);
+        document.getElementById('couponId').value = '';
+        document.getElementById('btnCoupon').innerText = 'Applied';
       }
     });
 
     document.getElementById('purchase').addEventListener('click', function () {
       const mass = document.getElementById('congratulateMassage');
+      //   document.getElementById('body').style.filter='blur'
       mass.classList.remove('hidden');
+      document.getElementById('goHome').addEventListener('click', function () {
+        mass.classList.add('hidden');
+        const cardList = (document.getElementById('productItem').innerHTML =
+          '');
+      });
     });
   });
 }
