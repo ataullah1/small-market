@@ -41,9 +41,17 @@ for (const card of cards) {
       mass.classList.remove('hidden');
       document.getElementById('goHome').addEventListener('click', function () {
         mass.classList.add('hidden');
-        const cardList = (document.getElementById('productItem').innerHTML =
-          '');
+        window.location.reload();
+        // goHome();
       });
     });
   });
+}
+
+function goHome() {
+  const cardList = (document.getElementById('productItem').innerHTML = '');
+  const discountPrice = (document.getElementById('discountPrice').innerText =
+    '0.00');
+  const total = (document.getElementById('total').innerText = '0.00');
+  const totalPrice = (document.getElementById('totalPrice').innerText = '0.00');
 }
