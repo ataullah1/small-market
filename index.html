@@ -157,7 +157,7 @@
         <div
           class="mt-6 mx-auto sm:mt-0 max-w-[380px] md:w-1/2 lg:w-2/6 xl:w-3/12 px-4"
         >
-          <div class="w-full bg-white rounded-lg py-6 px-2">
+          <div class="w-full bg-white rounded-lg py-6 px-4">
             <h2 class="text-black font-medium text-xl">Have coupon?</h2>
             <div class="flex flex-row w-full">
               <input
@@ -170,6 +170,38 @@
                 Apply
               </button>
             </div>
+          </div>
+          <div class="w-full bg-white rounded-lg mt-5 pt-6 px-4">
+            <h2 class="text-black font-medium text-xl">Product Items</h2>
+            <div id="productItem"></div>
+            <hr class="bg-[rgba(17, 17, 17, 0.15)] h-[1px] w-full my-3" />
+            <div class="space-y-3">
+              <p class="font-medium text-xl">
+                Total price:
+                <span class="text-[rgba(17, 17, 17, 0.55); ] font-normal"
+                  ><span id="totalPrice">0.00</span>TK
+                </span>
+              </p>
+              <p class="font-medium text-xl">
+                Discount:
+                <span class="text-[rgba(17, 17, 17, 0.50); ] font-normal"
+                  ><span id="discountPrice">0.00</span>TK
+                </span>
+              </p>
+              <p class="font-medium text-xl">
+                Total:
+                <span class="text-[rgba(17, 17, 17, 0.50); ] font-normal"
+                  ><span id="totalPrice">0.00</span>TK
+                </span>
+              </p>
+            </div>
+            <hr class="bg-[rgba(17, 17, 17, 0.15)] h-[1px] w-full my-3" />
+            <button
+              id="purchase"
+              class="w-full py-2 bg-[#E527B2] text-white font-semibold text-sm rounded-lg"
+            >
+              Make Purchase
+            </button>
           </div>
         </div>
       </div>
