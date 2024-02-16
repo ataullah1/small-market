@@ -1,3 +1,3 @@
 # Small Market
 
-## Live Link: 
+## Live Link: https://ataullah1.github.io/small-market/
