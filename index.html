@@ -16,7 +16,7 @@
       <div class="w-full lg:w-1/2 space-y-12">
         <h3 class="text-black text-3xl font-medium">---SALE FEVER---</h3>
         <h1 class="text-black font-bold text-5xl w-11/12 m-auto">
-          Purchase TK 200 or above & get
+          Purchase TK 3000 or above & get
           <span class="text-[#E527B2]">20% off</span>
         </h1>
         <p class="text-xl">
@@ -329,10 +329,12 @@
             <h2 class="text-black font-medium text-xl">Have coupon?</h2>
             <div class="flex flex-row w-full">
               <input
+                id="couponId"
                 class="px-3 py-1 text-[#292929] text-lg font-normal rounded-l-lg w-full border border-solid border-[#333333] border-r-0 outline-none"
                 type="text"
                 placeholder="Coupon code"
               /><button
+                id="btnCoupon"
                 class="bg-[#E527B2] hover:bg-[#8d196e] px-4 py-1 text-lg text-white font-semibold rounded-r-lg"
               >
                 Apply
@@ -361,7 +363,7 @@
               <p class="font-medium text-xl">
                 Total:
                 <span class="text-[rgba(17, 17, 17, 0.50); ] font-normal"
-                  ><span id="totalPrice">0.00</span>TK
+                  ><span id="total">0.00</span>TK
                 </span>
               </p>
             </div>
@@ -383,7 +385,7 @@
 
     <!-- Congratulations massage -->
     <div
-      id="congratulatMassage"
+      id="congratulateMassage"
       class="p-14 rounded-2xl bg-white shadow-lg shadow-pink-500 max-w-[600px] text-center space-y-3 absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-[600px] hidden"
     >
       <img class="h-40 w-40 m-auto" src="./images/congratulat.svg" alt="" />
