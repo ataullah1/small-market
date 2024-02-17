@@ -1,6 +1,7 @@
 console.log('Hello Js');
 let count = 1;
 let priceCount = 0;
+let congTotal = document.getElementById('congrTotal');
 const cards = document.getElementsByClassName('card');
 for (const card of cards) {
   card.addEventListener('click', function () {
@@ -19,6 +20,7 @@ for (const card of cards) {
     totalPrice.innerText = priceCount.toFixed(2);
     const total = document.getElementById('total');
     total.innerText = priceCount.toFixed(2);
+    congTotal.innerText = priceCount.toFixed(2);
 
     document.getElementById('btnCoupon').addEventListener('click', function () {
       const discountPrice = document.getElementById('discountPrice');
@@ -30,6 +32,7 @@ for (const card of cards) {
         discountPrice.innerText = discount.toFixed(2);
         const totalP = priceCount - discount;
         total.innerText = totalP.toFixed(2);
+        congTotal.innerText = totalP.toFixed(2);
         document.getElementById('couponId').value = '';
         document.getElementById('btnCoupon').innerText = 'Applied';
       }
@@ -37,6 +40,8 @@ for (const card of cards) {
 
     document.getElementById('purchase').addEventListener('click', function () {
       const mass = document.getElementById('congratulateMassage');
+      const purchase = document.getElementById('purchaseLink');
+      purchase.setAttribute('href', '#banner');
       //   document.getElementById('body').style.filter='blur'
       mass.classList.remove('hidden');
       document.getElementById('goHome').addEventListener('click', function () {

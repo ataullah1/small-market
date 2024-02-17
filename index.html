@@ -373,7 +373,7 @@
               id="purchase"
               class="w-full py-2 bg-[#E527B2] hover:bg-[#8d196e] text-white font-semibold text-sm rounded-lg relative -bottom-5"
             >
-              Make Purchase
+              <a class="px-[25%] py-2" id="purchaseLink">Make Purchase</a>
             </button>
           </div>
         </div>
@@ -387,12 +387,13 @@
     <!-- Congratulations massage -->
     <div
       id="congratulateMassage"
-      class="p-14 rounded-2xl bg-white shadow-lg shadow-pink-500 max-w-[600px] text-center space-y-3 absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-[600px] hidden"
+      class="p-14 rounded-2xl bg-white shadow-lg shadow-pink-500 max-w-[600px] text-center space-y-3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden"
     >
       <img class="h-40 w-40 m-auto" src="./images/congratulat.svg" alt="" />
       <h1 class="text-4xl font-bold text-black">Congratulations</h1>
       <p class="text-lg font-normal text-[rgba(17, 17, 17, 0.50)]">
-        Your Purchase the product
+        Your purchase has been successful. <br />
+        You have shopped a total of <span id="congrTotal"></span> tk.
       </p>
       <button
         id="goHome"
