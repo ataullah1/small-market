@@ -42,7 +42,7 @@ for (const card of cards) {
       const mass = document.getElementById('congratulateMassage');
       const purchase = document.getElementById('purchaseLink');
       purchase.setAttribute('href', '#banner');
-      //   document.getElementById('body').style.filter='blur'
+      document.getElementById('banner').classList.add('opacity-20');
       mass.classList.remove('hidden');
       document.getElementById('goHome').addEventListener('click', function () {
         mass.classList.add('hidden');
